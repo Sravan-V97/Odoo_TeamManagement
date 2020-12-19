@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<odoo>
+    <menuitem id="org_detail"
+
+              name="EventManagement_Organization"/>
+
+    <act_window id="org_assign"
+                name="teams"
+                res_model="manage.team"
+                view_mode="form,tree"/>
+
+    <menuitem id="menu_team"
+              name="team"
+              action="org_assign"
+              parent="org_detail"/>
+
+
+    <act_window id="team_schedule"
+                name="Team Scheduling"
+                res_model="assign.customers"
+                view_mode="form,tree"/>
+
+
+    <menuitem id="menu_customer"
+              name="Customer"
+              action="customer_assign"
+              parent="org_detail"/>
+
+</odoo>

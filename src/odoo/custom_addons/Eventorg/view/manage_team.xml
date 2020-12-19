@@ -1,0 +1,24 @@
+<odoo>
+    <record id="manage_team_form" model="ir.ui.view">
+        <field name="team">team form</field>
+        <field name="arch" type="xml">
+            <form string="Company">
+                    <group>
+                        <field name="team_name"/>
+                        <field name="emp_name"/>
+                    </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="manage_team_tree" model="ir.ui.view">
+        <field name="name">team list</field>
+        <field name="model">manage.team</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="team_name"/>
+                <field name="emp_name"/>
+            </tree>
+        </field>
+    </record>
+</odoo>

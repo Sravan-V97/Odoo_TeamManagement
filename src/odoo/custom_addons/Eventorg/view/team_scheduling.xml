@@ -1,0 +1,29 @@
+<odoo>
+    <record id="team_scheduling_form" model="ir.ui.view">
+        <field name="name">Team Scheduling</field>
+        <field name="model">team.scheduling</field>
+        <field name="arch" type="xml">
+            <form string="Company">
+                    <group>
+                        <field name="employee_id"/>
+                        <field name="employee_name"/>
+                        <field name="employee_dept"/>
+                    </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="team_scheduling_tree" model="ir.ui.view">
+        <field name="name">Team Scheduling Tree</field>
+        <field name="model">team.scheduling</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="employee_id"/>
+                <field name="employee_name"/>
+                <field name="employee_dept"/>
+                <field name="customer_id"/>
+                <field name="customer_name"/>
+            </tree>
+        </field>
+    </record>
+</odoo>
